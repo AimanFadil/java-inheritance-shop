@@ -16,17 +16,15 @@ public class Smartphone extends Prodotto{
     // METODI
 
 
+    @Override
+    public String toString() {
+        return "Smartphone{" +super.toString()+
+                "codiceIMEI=" + codiceIMEI +
+                ", memoria=" + memoria +
+                '}';
+    }
 
 
-    String memoriaToString(){
-        String memory = memoria + "GB";
-        return memory;
-    };
-
-    String imeiToString(){
-        String imei = "IMEI" + codiceIMEI ;
-        return imei;
-    };
 
     //GETTER
 

@@ -26,6 +26,18 @@ public class Prodotto {
 
     //METODI
 
+
+    @Override
+    public String toString() {
+        return "Prodotto{" +
+                "codice=" + codice +
+                ", nome='" + nome +
+                ", descrizione='" + descrizione +
+                ", prezzo=" + prezzo +
+                ", iva=" + iva
+                ;
+    }
+
     String getCodiceStringa(){
 
         String numeroStringa = Integer.toString(codice);

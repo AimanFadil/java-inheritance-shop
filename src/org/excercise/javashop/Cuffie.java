@@ -17,6 +17,14 @@ public class Cuffie extends Prodotto{
 
     // METODI
 
+    @Override
+    public String toString() {
+        return "Cuffie{" +super.toString()+
+                "colore=" + colore +
+                ", isWireless=" + isWireless +
+                '}';
+    }
+
 
     //GETTER
 
@@ -25,11 +33,7 @@ public class Cuffie extends Prodotto{
     }
 
     public boolean isWireless() {
-        if (isWireless()){
-            System.out.println("Wireless");
-        } else {
-            System.out.println("Con Cavo");
-        }
+
         return isWireless;
     }
 

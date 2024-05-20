@@ -14,6 +14,14 @@ public class Televisori extends Prodotto{
 
     // METODI
 
+    @Override
+    public String toString() {
+        return "Televisori{" + super.toString()+
+                "dimensioni='" + dimensioni +
+                ", isSmart=" + isSmart +
+                '}';
+    }
+
 
     //GETTER
 
@@ -22,11 +30,7 @@ public class Televisori extends Prodotto{
     }
 
     public boolean isSmart() {
-        if (isSmart()){
-            System.out.println("Smart tv");
-        }else {
-            System.out.println("No Smart tv");
-        }
+
         return isSmart;
     }
 
